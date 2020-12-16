@@ -1,0 +1,308 @@
+html,body
+{
+	margin:0; padding:0;
+	font-family: Open Sans Light,sans-serif;
+	font-size: 18pt
+}
+/*Background image*/
+#adaptive-bg
+{
+	background-image: url('../images/background.jpg');
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+/****************/
+
+header
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+header a
+{
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	transition: 1s;
+	border-radius: 5px;
+}
+header a:hover
+{
+	background-color: rgba(81,114,255,0.2);
+}
+/*Hamburger-button*/
+#hamburger-button
+{
+	display: flex;
+	width: 64px;
+	height: 64px;
+	background-color: rgba(81,114,255,0.2);
+	border-radius: 50px;
+	margin-right: 100px;
+	margin-left: 20px;
+	position:relative;
+	cursor: pointer;
+}
+#hamburger-button span,
+#hamburger-button span::before,
+#hamburger-button span::after
+{
+	height: 2px;
+	width: 30px;
+	top: 50%; margin-top: -1px;
+	left: 50%; margin-left: -15px;
+	position: absolute;
+	background-color: #363636;
+	transition: 0.5s;
+}
+#hamburger-button span::before,
+#hamburger-button span::after
+{
+	content: '';
+}
+#hamburger-button span::before
+{
+	transform: translateY(-8px);
+}
+#hamburger-button span::after
+{
+	transform: translateY(8px);
+}
+#hamburger-button:hover > span::before
+{
+	transform: translateY(-12px);
+}
+#hamburger-button:hover > span::after
+{
+	transform: translateY(12px);
+}
+/***************/
+
+.header-mim-logo img
+{
+	width: 178px;
+	height: 80px;
+}
+
+.flex-left
+{
+	display: flex;
+	padding: 5px;
+	flex-grow: 1;
+	align-items: center;
+
+}
+.flex-center
+{
+	display: flex;
+	padding: 5px;
+	flex-grow: 1;
+
+	justify-content: space-evenly;
+}
+
+.flex-right
+{
+	display: flex;
+	padding: 5px;
+	flex-grow: 1;
+	justify-content: flex-end;
+}
+.flex-right a
+{
+	margin-right: 15px;
+}
+
+
+.rep
+{
+	align-self: center;
+	margin-left: 15px;
+}
+#mainImage 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 200px;
+	margin-bottom: 50px;
+}
+#info-panel
+{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#get-started
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+}
+.take-part a, .watch a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 28.5pt;
+	
+}
+.take-part, .watch
+{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	transition: 1s;
+	padding: 5px;
+	border-radius: 5px;
+	
+}
+.leftM, .rightM
+{
+	width: 300px;
+}
+.middleM
+{
+	width: 150px;
+}
+.take-part:hover
+{
+background-color: rgba(1,88,168,0.2);
+
+}
+.watch:hover
+{
+background-color: rgba(81,114,255,0.2);
+}
+
+
+
+
+/*Sidebar*/
+#side-pannel
+{
+	position: absolute;
+	height: 100vh;
+	width: 370px;
+	z-index: 2000;
+	background-color: rgba(0,88,162,0.4);
+	left: -400px;
+	transition: 1s;
+	box-shadow: 1px 5px 10px black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+}
+#side-pannel  a
+{
+	text-decoration: none;
+	color: black;
+}
+#side-bar-header
+{
+	align-self: flex-end;
+	height: 10%;
+}
+#side-bar-header img
+{
+	margin-right: 20px;
+	margin-top: 20px;
+	cursor: pointer;
+	
+}
+#top
+{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 30%;
+	text-decoration: none;
+	color: black;
+}
+#bottom
+{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 60%;
+	text-decoration: none;
+	color: black;
+}
+#avatar
+{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 2px solid black;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	
+}
+#avatar img
+{
+	position: absolute;
+	transform: translate(-70%, -70%);
+	top: 70%;
+	left: 70%;
+}
+
+#side-info-panel
+{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+#logout
+{
+	margin-top: auto;
+	margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
